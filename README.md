@@ -1,4 +1,4 @@
-# Anime-Game-Updater 3.0 - 3.1
+# Anime-Game-Updater 3.1 - 3.2
 
 ## How to use
 
