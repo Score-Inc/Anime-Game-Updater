@@ -1,6 +1,9 @@
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/1012.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/1015.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/1016.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/2031.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/2032.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/2033.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/3013.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/External0.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/External1.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Japanese/External10.pck
