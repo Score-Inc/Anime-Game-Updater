@@ -1,4 +1,6 @@
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/2031.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/2032.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/2033.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/External0.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/External1.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/External10.pck

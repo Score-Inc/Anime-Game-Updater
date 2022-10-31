@@ -1,0 +1,16 @@
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4001.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4002.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4003.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4004.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4005.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4006.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4007.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4008.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4009.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4010.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4011.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4012.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4013.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4014.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4015.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Chinese/4017.pck
