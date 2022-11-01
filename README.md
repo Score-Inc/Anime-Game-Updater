@@ -1,4 +1,4 @@
-# Anime-Game-Updater 3.0 - 3.1
+# Anime-Game-Updater
 
 ## How to use
 1. copy all the files and paste it on your game root folder
