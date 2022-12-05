@@ -31,14 +31,8 @@ GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Banks7.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Banks8.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Banks9.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Minimum.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music17.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music19.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music2.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music20.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music29.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music30.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music4.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music7.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music8.pck
+GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Music9.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed0.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed1.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed10.pck
@@ -46,7 +40,6 @@ GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed11.
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed12.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed13.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed14.pck
-GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed15.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed16.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed17.pck
 GenshinImpact_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Streamed18.pck
