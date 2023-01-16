@@ -5,7 +5,7 @@ SetLocal EnableDelayedExpansion
 REM Set working directory to current directory. Otherwise it will not work in ProgramFiles folder with admin permissions.
 set WorkingDirForAdmin=%~dp0
 REM Check if all necessary files are present.
-echo Checking if all necessary files to update the game from Patch 3.2.0 to 3.3.0 are present...
+echo Checking if all necessary files to update the game from Patch 3.3.0 to 3.4.0 are present...
 REM Entry point to retry patch application.
 :SelectionY
 REM Create variable for patch finished.
@@ -37,15 +37,15 @@ for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!GenshinImpact_Data\Persis
 		set KoreanInstalled=True
 		set CurrentLanguage=Korean
 	)
-	REM Check if required TH_GP_AudioPatch_[language]_3.2.0-3.3.0.txt files are present, variable will be set to true if at least one file is missing. All missing files will be listed.
-	if NOT exist "!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.2.0-3.3.0.txt" (
-		echo "TH_GP_AudioPatch_!CurrentLanguage!_3.2.0-3.3.0.txt" is missing.
+	REM Check if required TH_GP_AudioPatch_[language]_3.3.0-3.4.0.txt files are present, variable will be set to true if at least one file is missing. All missing files will be listed.
+	if NOT exist "!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.3.0-3.4.0.txt" (
+		echo "TH_GP_AudioPatch_!CurrentLanguage!_3.3.0-3.4.0.txt" is missing.
 		set FileMissing=True
 		set CurrentLanguage=None
 	)
 )
-if NOT exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.2.0-3.3.0.txt" (
-	echo "TH_GP_AudioPatch_Common_3.2.0-3.3.0.txt" is missing.
+if NOT exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.3.0-3.4.0.txt" (
+	echo "TH_GP_AudioPatch_Common_3.3.0-3.4.0.txt" is missing.
 	set FileMissing=True
 )
 REM Result of check if all audio patch files are present.
@@ -91,7 +91,7 @@ for /L %%i in (1,1,4) do (
 		)
 	)
 	if NOT "!CurrentLanguage!"=="None" (
-		for /F "usebackq delims=" %%j in ("!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.2.0-3.3.0.txt") do (
+		for /F "usebackq delims=" %%j in ("!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.3.0-3.4.0.txt") do (
 			if NOT exist "!WorkingDirForAdmin!%%j" (
 				echo "!WorkingDirForAdmin!%%j" is missing.
 				set FileMissing=True
@@ -104,7 +104,7 @@ for /L %%i in (1,1,4) do (
 	)
 )
 REM Check if required common audio and patch files are present, variable will be set to true if at least one file is missing. All missing files will be listed.
-for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.2.0-3.3.0.txt") do (
+for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.3.0-3.4.0.txt") do (
 	if NOT exist "!WorkingDirForAdmin!%%i" (
 		echo "!WorkingDirForAdmin!%%i" is missing.
 		set FileMissing=True
@@ -173,7 +173,7 @@ for /L %%i in (1,1,4) do (
 		)
 	)
 	if NOT "!CurrentLanguage!"=="None" (
-		for /F "usebackq delims=" %%j in ("!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.2.0-3.3.0.txt") do (
+		for /F "usebackq delims=" %%j in ("!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.3.0-3.4.0.txt") do (
 			REM Remove read-only attribute from audio files. Necessary for patch application.
 			attrib -R "!WorkingDirForAdmin!%%j"
 			REM (command to apply patch) (original file) (patch file)	  (output file, larger size afterwards)
@@ -182,7 +182,7 @@ for /L %%i in (1,1,4) do (
 		)
 	)
 )
-for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.2.0-3.3.0.txt") do (
+for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.3.0-3.4.0.txt") do (
 	REM Remove read-only attribute from audio files. Necessary for patch application.
 	attrib -R "!WorkingDirForAdmin!%%i"
 	REM (command to apply patch) (original file) (patch file)	  (output file, larger size afterwards)
@@ -222,7 +222,7 @@ for /L %%i in (1,1,4) do (
 	)
 	if NOT "!CurrentLanguage!"=="None" (
 		REM Delete obsolete language files after patch application.
-		for /F "usebackq delims=" %%j in ("!WorkingDirForAdmin!TH_GP_Cleanup_!CurrentLanguage!_3.2.0-3.3.0.txt") do (
+		for /F "usebackq delims=" %%j in ("!WorkingDirForAdmin!TH_GP_Cleanup_!CurrentLanguage!_3.3.0-3.4.0.txt") do (
 			if exist "!WorkingDirForAdmin!%%j" (
 				REM Remove read-only attribute from obsolete files. Necessary for deletion.
 				attrib -R "!WorkingDirForAdmin!%%j"
@@ -230,7 +230,7 @@ for /L %%i in (1,1,4) do (
 			)
 		)
 		REM Delete obsolete language .hdiff files after patch application.
-		for /F "usebackq delims=" %%k in ("!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.2.0-3.3.0.txt") do (
+		for /F "usebackq delims=" %%k in ("!WorkingDirForAdmin!TH_GP_AudioPatch_!CurrentLanguage!_3.3.0-3.4.0.txt") do (
 			if exist "!WorkingDirForAdmin!%%k.hdiff" (
 				del "!WorkingDirForAdmin!%%k.hdiff"
 			)
@@ -238,7 +238,7 @@ for /L %%i in (1,1,4) do (
 	)
 )
 REM Delete obsolete common audio files after patch application.
-for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_Cleanup_Common_3.2.0-3.3.0.txt") do (
+for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_Cleanup_Common_3.3.0-3.4.0.txt") do (
 		if exist "!WorkingDirForAdmin!%%i" (
 			REM Remove read-only attribute from obsolete files. Necessary for deletion.
 			attrib -R "!WorkingDirForAdmin!%%i"
@@ -247,48 +247,48 @@ for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_Cleanup_Common_3.2.
 	)
 )
 REM Delete obsolete common audio .hdiff files after patch application.
-for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.2.0-3.3.0.txt") do (
+for /F "usebackq delims=" %%i in ("!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.3.0-3.4.0.txt") do (
 	if exist "!WorkingDirForAdmin!%%i.hdiff" (
 		del "!WorkingDirForAdmin!%%i.hdiff"
 	)
 )
-REM Delete source file for TH_GP_Cleanup_[language]_3.2.0-3.3.0.txt and the file itself.
+REM Delete source file for TH_GP_Cleanup_[language]_3.3.0-3.4.0.txt and the file itself.
 if exist "!WorkingDirForAdmin!deletefiles.txt" (
 	del "!WorkingDirForAdmin!deletefiles.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Common_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_Cleanup_Common_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Common_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_Cleanup_Common_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Chinese_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_Cleanup_Chinese_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Chinese_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_Cleanup_Chinese_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_Cleanup_English_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_Cleanup_English_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_Cleanup_English_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_Cleanup_English_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Japanese_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_Cleanup_Japanese_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Japanese_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_Cleanup_Japanese_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Korean_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_Cleanup_Korean_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_Cleanup_Korean_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_Cleanup_Korean_3.3.0-3.4.0.txt"
 )
-REM Delete source file for TH_GP_AudioPatch_[language]_3.2.0-3.3.0.txt and the file itself.
+REM Delete source file for TH_GP_AudioPatch_[language]_3.3.0-3.4.0.txt and the file itself.
 if exist "!WorkingDirForAdmin!hdifffiles.txt" (
 	del "!WorkingDirForAdmin!hdifffiles.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Common_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Chinese_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Chinese_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Chinese_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Chinese_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_English_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_AudioPatch_English_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_English_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_AudioPatch_English_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Japanese_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Japanese_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Japanese_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Japanese_3.3.0-3.4.0.txt"
 )
-if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Korean_3.2.0-3.3.0.txt" (
-	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Korean_3.2.0-3.3.0.txt"
+if exist "!WorkingDirForAdmin!TH_GP_AudioPatch_Korean_3.3.0-3.4.0.txt" (
+	del "!WorkingDirForAdmin!TH_GP_AudioPatch_Korean_3.3.0-3.4.0.txt"
 )
 REM Delete patch application.
 if exist "!WorkingDirForAdmin!hpatchz.exe" (
@@ -304,7 +304,7 @@ goto End
 :End
 pause
 if "%PatchFinished%"=="True" (
-	if exist "!WorkingDirForAdmin!TH_GP_3.2.0-3.3.0.bat" (
-		del "!WorkingDirForAdmin!TH_GP_3.2.0-3.3.0.bat"
+	if exist "!WorkingDirForAdmin!TH_GP_3.3.0-3.4.0.bat" (
+		del "!WorkingDirForAdmin!TH_GP_3.3.0-3.4.0.bat"
 	)
 )
